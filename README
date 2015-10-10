@@ -1,0 +1,34 @@
+Software: Huffman code file compression
+Language: Java
+Author: Hy Truong Son
+Major: BSc. Computer Science
+Class: 2013 - 2016
+Institution: Eotvos Lorand University
+Email: sonpascal93@gmail.com
+Website: http://people.inf.elte.hu/hytruongson/
+Copyright 2015 (c) Hy Truong Son. All rights reserved.
+
+Overall
+-------
+Huffman code compression with my own binary file format definition.
+
+Usage
+-----
+* Compile:
+$ javac HuffmanCode.java
+$ javac OptimalHuffman.java
+
+* File compression, compress file Hy_Truong_Son_Resume.pdf to file compressed.pdf:
+$ java OptimalHuffman -e Hy_Truong_Son_Resume.pdf compressed.pdf 
+[Completed compression for one 102980-byte segment]
+
+* File decompression, decompress file compressed.pdf to decompressed.pdf:
+$ java OptimalHuffman -d compressed.pdf decompressed.pdf
+[Completed decompression for one 102980-byte segment]
+
+
+** Alternative file compression, compress file Hy_Truong_Son_Resume.pdf to file compressed.pdf:
+$ java HuffmanCode -e Hy_Truong_Son_Resume.pdf compressed.pdf
+
+** Alternative file decompression, decompress file compressed.pdf to decompressed.pdf:
+$ java HuffmanCode -d compressed.pdf decompressed.pdf
